@@ -1,0 +1,324 @@
+GAS LISTING /tmp/ccxxOTcg.s 			page 1
+
+
+   1              		.file	"hello.c"
+   2              		.text
+   3              	.Ltext0:
+   4              		.file 0 "/mnt/e/c-prog-learn" "hello/hello.c"
+   5              		.section	.rodata
+   6              	.LC0:
+   7 0000 48656C6C 		.string	"Hello, World!"
+   7      6F2C2057 
+   7      6F726C64 
+   7      2100
+   8              		.text
+   9              		.globl	main
+  10              		.type	main, @function
+  11              	main:
+  12              	.LFB0:
+  13              		.file 1 "hello/hello.c"
+   1:hello/hello.c **** #include <stdio.h>
+   2:hello/hello.c **** 
+   3:hello/hello.c **** int main() {
+  14              		.loc 1 3 12
+  15 0000 14000000 		.cfi_startproc
+  15      00000000 
+  15      017A5200 
+  15      01781001 
+  15      1B0C0708 
+  16 0000 F30F1EFA 		endbr64
+  17 0004 55       		pushq	%rbp
+  18 0029 450E10   		.cfi_def_cfa_offset 16
+  19 002c 8602     		.cfi_offset 6, -16
+  20 0005 4889E5   		movq	%rsp, %rbp
+  21 002e 430D06   		.cfi_def_cfa_register 6
+   4:hello/hello.c ****     printf("Hello, World!\n");
+  22              		.loc 1 4 5
+  23 0008 488D0500 		leaq	.LC0(%rip), %rax
+  23      000000
+  24 000f 4889C7   		movq	%rax, %rdi
+  25 0012 E8000000 		call	puts@PLT
+  25      00
+   5:hello/hello.c ****     return 0;
+  26              		.loc 1 5 12
+  27 0017 B8000000 		movl	$0, %eax
+  27      00
+   6:hello/hello.c **** }...
+  28              		.loc 1 6 1
+  29 001c 5D       		popq	%rbp
+  30 0031 550C0708 		.cfi_def_cfa 7, 8
+  31 001d C3       		ret
+  32 0035 000000   		.cfi_endproc
+  33              	.LFE0:
+  34              		.size	main, .-main
+  35              	.Letext0:
+  36              		.section	.debug_info,"",@progbits
+  37              	.Ldebug_info0:
+  38 0000 8D000000 		.long	0x8d
+  39 0004 0500     		.value	0x5
+  40 0006 01       		.byte	0x1
+  41 0007 08       		.byte	0x8
+GAS LISTING /tmp/ccxxOTcg.s 			page 2
+
+
+  42 0008 00000000 		.long	.Ldebug_abbrev0
+  43 000c 02       		.uleb128 0x2
+  44 000d 00000000 		.long	.LASF10
+  45 0011 1D       		.byte	0x1d
+  46 0012 03       		.byte	0x3
+  47 0013 47160300 		.long	0x31647
+  48 0017 00000000 		.long	.LASF0
+  49 001b 00000000 		.long	.LASF1
+  50 001f 00000000 		.quad	.Ltext0
+  50      00000000 
+  51 0027 1E000000 		.quad	.Letext0-.Ltext0
+  51      00000000 
+  52 002f 00000000 		.long	.Ldebug_line0
+  53 0033 01       		.uleb128 0x1
+  54 0034 08       		.byte	0x8
+  55 0035 07       		.byte	0x7
+  56 0036 00000000 		.long	.LASF2
+  57 003a 01       		.uleb128 0x1
+  58 003b 04       		.byte	0x4
+  59 003c 07       		.byte	0x7
+  60 003d 00000000 		.long	.LASF3
+  61 0041 01       		.uleb128 0x1
+  62 0042 01       		.byte	0x1
+  63 0043 08       		.byte	0x8
+  64 0044 00000000 		.long	.LASF4
+  65 0048 01       		.uleb128 0x1
+  66 0049 02       		.byte	0x2
+  67 004a 07       		.byte	0x7
+  68 004b 00000000 		.long	.LASF5
+  69 004f 01       		.uleb128 0x1
+  70 0050 01       		.byte	0x1
+  71 0051 06       		.byte	0x6
+  72 0052 00000000 		.long	.LASF6
+  73 0056 01       		.uleb128 0x1
+  74 0057 02       		.byte	0x2
+  75 0058 05       		.byte	0x5
+  76 0059 00000000 		.long	.LASF7
+  77 005d 03       		.uleb128 0x3
+  78 005e 04       		.byte	0x4
+  79 005f 05       		.byte	0x5
+  80 0060 696E7400 		.string	"int"
+  81 0064 01       		.uleb128 0x1
+  82 0065 08       		.byte	0x8
+  83 0066 05       		.byte	0x5
+  84 0067 00000000 		.long	.LASF8
+  85 006b 01       		.uleb128 0x1
+  86 006c 01       		.byte	0x1
+  87 006d 06       		.byte	0x6
+  88 006e 00000000 		.long	.LASF9
+  89 0072 04       		.uleb128 0x4
+  90 0073 00000000 		.long	.LASF11
+  91 0077 01       		.byte	0x1
+  92 0078 03       		.byte	0x3
+  93 0079 05       		.byte	0x5
+  94 007a 5D000000 		.long	0x5d
+  95 007e 00000000 		.quad	.LFB0
+  95      00000000 
+GAS LISTING /tmp/ccxxOTcg.s 			page 3
+
+
+  96 0086 1E000000 		.quad	.LFE0-.LFB0
+  96      00000000 
+  97 008e 01       		.uleb128 0x1
+  98 008f 9C       		.byte	0x9c
+  99 0090 00       		.byte	0
+ 100              		.section	.debug_abbrev,"",@progbits
+ 101              	.Ldebug_abbrev0:
+ 102 0000 01       		.uleb128 0x1
+ 103 0001 24       		.uleb128 0x24
+ 104 0002 00       		.byte	0
+ 105 0003 0B       		.uleb128 0xb
+ 106 0004 0B       		.uleb128 0xb
+ 107 0005 3E       		.uleb128 0x3e
+ 108 0006 0B       		.uleb128 0xb
+ 109 0007 03       		.uleb128 0x3
+ 110 0008 0E       		.uleb128 0xe
+ 111 0009 00       		.byte	0
+ 112 000a 00       		.byte	0
+ 113 000b 02       		.uleb128 0x2
+ 114 000c 11       		.uleb128 0x11
+ 115 000d 01       		.byte	0x1
+ 116 000e 25       		.uleb128 0x25
+ 117 000f 0E       		.uleb128 0xe
+ 118 0010 13       		.uleb128 0x13
+ 119 0011 0B       		.uleb128 0xb
+ 120 0012 9001     		.uleb128 0x90
+ 121 0014 0B       		.uleb128 0xb
+ 122 0015 9101     		.uleb128 0x91
+ 123 0017 06       		.uleb128 0x6
+ 124 0018 03       		.uleb128 0x3
+ 125 0019 1F       		.uleb128 0x1f
+ 126 001a 1B       		.uleb128 0x1b
+ 127 001b 1F       		.uleb128 0x1f
+ 128 001c 11       		.uleb128 0x11
+ 129 001d 01       		.uleb128 0x1
+ 130 001e 12       		.uleb128 0x12
+ 131 001f 07       		.uleb128 0x7
+ 132 0020 10       		.uleb128 0x10
+ 133 0021 17       		.uleb128 0x17
+ 134 0022 00       		.byte	0
+ 135 0023 00       		.byte	0
+ 136 0024 03       		.uleb128 0x3
+ 137 0025 24       		.uleb128 0x24
+ 138 0026 00       		.byte	0
+ 139 0027 0B       		.uleb128 0xb
+ 140 0028 0B       		.uleb128 0xb
+ 141 0029 3E       		.uleb128 0x3e
+ 142 002a 0B       		.uleb128 0xb
+ 143 002b 03       		.uleb128 0x3
+ 144 002c 08       		.uleb128 0x8
+ 145 002d 00       		.byte	0
+ 146 002e 00       		.byte	0
+ 147 002f 04       		.uleb128 0x4
+ 148 0030 2E       		.uleb128 0x2e
+ 149 0031 00       		.byte	0
+ 150 0032 3F       		.uleb128 0x3f
+ 151 0033 19       		.uleb128 0x19
+GAS LISTING /tmp/ccxxOTcg.s 			page 4
+
+
+ 152 0034 03       		.uleb128 0x3
+ 153 0035 0E       		.uleb128 0xe
+ 154 0036 3A       		.uleb128 0x3a
+ 155 0037 0B       		.uleb128 0xb
+ 156 0038 3B       		.uleb128 0x3b
+ 157 0039 0B       		.uleb128 0xb
+ 158 003a 39       		.uleb128 0x39
+ 159 003b 0B       		.uleb128 0xb
+ 160 003c 27       		.uleb128 0x27
+ 161 003d 19       		.uleb128 0x19
+ 162 003e 49       		.uleb128 0x49
+ 163 003f 13       		.uleb128 0x13
+ 164 0040 11       		.uleb128 0x11
+ 165 0041 01       		.uleb128 0x1
+ 166 0042 12       		.uleb128 0x12
+ 167 0043 07       		.uleb128 0x7
+ 168 0044 40       		.uleb128 0x40
+ 169 0045 18       		.uleb128 0x18
+ 170 0046 7C       		.uleb128 0x7c
+ 171 0047 19       		.uleb128 0x19
+ 172 0048 00       		.byte	0
+ 173 0049 00       		.byte	0
+ 174 004a 00       		.byte	0
+ 175              		.section	.debug_aranges,"",@progbits
+ 176 0000 2C000000 		.long	0x2c
+ 177 0004 0200     		.value	0x2
+ 178 0006 00000000 		.long	.Ldebug_info0
+ 179 000a 08       		.byte	0x8
+ 180 000b 00       		.byte	0
+ 181 000c 0000     		.value	0
+ 182 000e 0000     		.value	0
+ 183 0010 00000000 		.quad	.Ltext0
+ 183      00000000 
+ 184 0018 1E000000 		.quad	.Letext0-.Ltext0
+ 184      00000000 
+ 185 0020 00000000 		.quad	0
+ 185      00000000 
+ 186 0028 00000000 		.quad	0
+ 186      00000000 
+ 187              		.section	.debug_line,"",@progbits
+ 188              	.Ldebug_line0:
+ 189 0000 52000000 		.section	.debug_str,"MS",@progbits,1
+ 189      05000800 
+ 189      2E000000 
+ 189      010101FB 
+ 189      0E0D0001 
+ 190              	.LASF3:
+ 191 0000 756E7369 		.string	"unsigned int"
+ 191      676E6564 
+ 191      20696E74 
+ 191      00
+ 192              	.LASF2:
+ 193 000d 6C6F6E67 		.string	"long unsigned int"
+ 193      20756E73 
+ 193      69676E65 
+ 193      6420696E 
+ 193      7400
+GAS LISTING /tmp/ccxxOTcg.s 			page 5
+
+
+ 194              	.LASF6:
+ 195 001f 7369676E 		.string	"signed char"
+ 195      65642063 
+ 195      68617200 
+ 196              	.LASF5:
+ 197 002b 73686F72 		.string	"short unsigned int"
+ 197      7420756E 
+ 197      7369676E 
+ 197      65642069 
+ 197      6E7400
+ 198              	.LASF7:
+ 199 003e 73686F72 		.string	"short int"
+ 199      7420696E 
+ 199      7400
+ 200              	.LASF4:
+ 201 0048 756E7369 		.string	"unsigned char"
+ 201      676E6564 
+ 201      20636861 
+ 201      7200
+ 202              	.LASF8:
+ 203 0056 6C6F6E67 		.string	"long int"
+ 203      20696E74 
+ 203      00
+ 204              	.LASF11:
+ 205 005f 6D61696E 		.string	"main"
+ 205      00
+ 206              	.LASF10:
+ 207 0064 474E5520 		.string	"GNU C23 15.2.0 -mtune=generic -march=x86-64 -ggdb -fasynchronous-unwind-tables -fstack-pr
+ 207      43323320 
+ 207      31352E32 
+ 207      2E30202D 
+ 207      6D74756E 
+ 208              	.LASF9:
+ 209 0112 63686172 		.string	"char"
+ 209      00
+ 210              		.section	.debug_line_str,"MS",@progbits,1
+ 211              	.LASF0:
+ 212 0000 68656C6C 		.string	"hello/hello.c"
+ 212      6F2F6865 
+ 212      6C6C6F2E 
+ 212      6300
+ 213              	.LASF1:
+ 214 000e 2F6D6E74 		.string	"/mnt/e/c-prog-learn"
+ 214      2F652F63 
+ 214      2D70726F 
+ 214      672D6C65 
+ 214      61726E00 
+ 215              		.ident	"GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+ 216 0022 2F6D6E74 		.section	.note.GNU-stack,"",@progbits
+ 216      2F652F63 
+ 216      2D70726F 
+ 216      672D6C65 
+ 216      61726E00 
+ 217              		.section	.note.gnu.property,"a"
+ 218              		.align 8
+ 219 0000 04000000 		.long	1f - 0f
+ 220 0004 10000000 		.long	4f - 1f
+GAS LISTING /tmp/ccxxOTcg.s 			page 6
+
+
+ 221 0008 05000000 		.long	5
+ 222              	0:
+ 223 000c 474E5500 		.string	"GNU"
+ 224              	1:
+ 225              		.align 8
+ 226 0010 020000C0 		.long	0xc0000002
+ 227 0014 04000000 		.long	3f - 2f
+ 228              	2:
+ 229 0018 03000000 		.long	0x3
+ 230              	3:
+ 231 001c 00000000 		.align 8
+ 232              	4:
+GAS LISTING /tmp/ccxxOTcg.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 hello.c
+     /tmp/ccxxOTcg.s:11     .text:0000000000000000 main
+
+UNDEFINED SYMBOLS
+puts
